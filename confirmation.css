@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "poppins", sans-serif;   
+}
+
+a{
+    text-decoration: none;
+}
+
+/*----ocean meta---*/
+header{
+    z-index: 999;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px 150px;
+    transition: 0.5s ease;
+}
+
+header .brand{
+    color: #87d1f3;
+    font-size: 2em;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/*---navigation bar--*/
+header .navigation{
+    position: relative;
+}
+
+header .navigation .navigation-items{
+    display: flex;
+    align-items: right;
+    gap: 2.5rem;
+    margin-left: 200px;
+}
+
+
+header .navigation .navigation-items a{
+   font-size: 1.1rem;
+   transition: all 400ms ease;
+   text-decoration: none;
+   color: #94d6f5;
+}
+
+header .navigation .navigation-items a:hover{
+  color: white;
+}
+
+
+
+
+/*--video--*/
+.head{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: lightskyblue;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(back\ newwwwwwwwwww.jpg);;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.head:before{
+    z-index: 777;
+    content: '';
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+
+/*---heading---*/
+
+.head .donate{
+    z-index: 888;
+    color:#fff;
+    width: 70%;
+    margin-top: 150px; 
+    margin-left: 20px;
+}
+
+.head .donate h1{
+    font-size: 4em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 75px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 180px;
+}
+
+.head .donate  h1 span{
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.head .donate p{
+    margin-bottom: 65px;
+    margin-left: 20%;
+}
+
+.head video{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.pic{
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(new\ image2.avif);;   
+    min-height: 110vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+ .donate{
+    color: white;
+    font-size: 15px;
+    margin-left: 10%;
+    margin-top: -45%;
+    
+ }
+.donate2{ 
+    font-size: 25px;
+    color: #fff;
+    max-width: 47%;
+    margin-top: 5%;
+    margin-left: 5%;
+    line-height: 250%;
+    
+}
+
+.donateH{
+    color: white;
+    font-size: 20px;
+    margin-left: 15%;
+    margin-top: -85%;
+}
+
+
+.table{
+    margin: 5%;
+    margin-top: -20px;
+    padding: 70px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35%;
+}
+
+table{
+    background-color: #94d6f5;
+    width: 50%;
+    text-align: center;
+    font-family: oswald;
+    font-size: 15pt;
+    margin-left:55%;
+}
+
+table td, th{
+    padding: 1%;
+    height: 45px;
+}
+
+ /*---footer---*/
+
+footer{
+    background:#286785;
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    font-size: 0.9rem;
+    margin-top: -1%;
+    margin-bottom: 0px;
+
+    
+  }
+  
+  .footer__container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5rem;
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: auto;
+  }
+  
+  .footer__container h4{
+    margin-bottom: 1.2rem;
+    color: #78cdf5;
+    
+  }
+  
+  .footer__logo {
+    text-decoration: none;
+  }
+  .footer__1 p{
+    margin: 0 0 2rem;
+    color: white;
+  }
+  
+  .footer__2 ul li{
+    color: white;
+  }
+  .footer__2 ul li a{
+    margin-bottom: 0.7rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer__container p{
+    color: white;
+  }
+  
+
+
+
+
+
+  
+/*--resolution--*/
+
+@media(max-width:390px){
+
+    /*--nav--*/
+
+     header .navigation .navigation-items{
+display: grid;
+margin-left: 120%;
+line-height: 100%;
+gap: 0.8rem;
+
+    }
+ 
+    /*--logo--*/
+    header .brand{   
+margin-left: -90%;
+margin-top: -160%;
+width: 10%;
+    }
+
+
+    /*--Header--*/
+    .head .donate h1{
+        font-size: 270%;
+        margin-left: 20%;
+      }
+    
+.table{
+    width: 130%;
+    height: 50%;
+    margin-top: 60%;
+    margin-left: -17%;
+}
+
+.donateH h1{
+    margin-top: -390%;
+}
+
+.donate2 {
+    max-width: 90%;
+    font-size: 140%;
+}
+
+/*--foter--*/
+
+footer{
+    margin-top: 150%;
+}
+.footer__1{
+    font-size: 80%;
+    margin-left: -50%;
+    
+    }
+
+    .footer__2{
+    font-size: 80%;
+    margin-left: 100%;
+
+    }
+
+    .footer__3{
+    font-size: 80%; 
+    margin-left: -120%;
+    margin-top: 320%;
+
+    }
+    
+    .footer__4{
+        margin-left: -230%;
+        margin-top: 100%;
+        max-width: 50%;
+        
+    }
+}
+
+
+
+@media(max-width:820px){
+    /*--nav--*/
+    
+    header .navigation .navigation-items{
+        display: grid;
+        margin-left: 100%;
+        line-height: 100%;
+        gap: 0.8rem;
+        
+            }
+            .head .donate h1{
+                color: #0f7ebe;
+                margin-left: 5%;
+            }
+    
+        
+            /*--logo--*/
+            header .brand{   
+        margin-left: -10%;
+        margin-top: -30%;
+        width: 10%;
+            }
+    
+        .donateH{
+            margin-top: -340%;
+        }
+
+        .donate2{
+            margin-left: 10%;
+            max-width: 80%;
+        }
+        
+        table{
+            width: 100%;
+            height: 50%;
+            margin-top: 190%;
+            margin-left: -20%;
+        }
+        
+        .table1{
+            width: 70%;
+            margin-top: -10%;
+            margin-left: 17%;
+        }
+        
+     /*--foter--*/
+
+     footer{
+        margin-top: -10%;
+     }
+
+.footer__1{
+    font-size: 80%;
+    margin-left: 1%;
+    
+    }
+
+    .footer__2{
+    font-size: 80%;
+    margin-left: -1%;
+
+    }
+
+    .footer__3{
+    font-size: 80%; 
+    margin-left: -231%;
+    margin-top: 320%;
+    max-width: 150%;
+
+    }
+    
+    .footer__4{
+        margin-left: -320%;
+        margin-top: 180%;
+        max-width: 40%;
+        font-size: 70%;
+        
+    }
+       /*--logo--*/
+       header .brand{   
+        margin-left: -130%;
+        margin-top: -190%;
+        width: 10%;
+        font-size: 150%;
+            }
+
+        
+    
+
+                .pic{
+                    min-height: 250vh;
+                }
+            
+            
+    }
